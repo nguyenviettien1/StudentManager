@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/text_view_label_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select a field: "
+        android:textSize="20sp"/>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_label_update"/>
+
+    <EditText
+        android:id="@+id/edit_text_update_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner"
+        android:hint="type something"/>
+
+    <TextView
+        android:id="@+id/text_view_update_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_text_update_content"
+        android:textSize="13dp"
+        android:textColor="#000"
+        android:text="update result"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/btn_submit_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_update_result"
+        android:layout_alignParentRight="true"
+        android:text="Update"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btn_close3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_update_result"
+        android:layout_toLeftOf="@id/btn_submit_update"
+        android:text="Close"
+        android:layout_marginRight="30dp"
+        android:textAllCaps="false"/>
+
+</RelativeLayout>
